@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html" charset="utf8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>MonPortfolio</title>
+  </head>
+  <body>
+    <section id="bloc1" class="section-home">
+      <div class="section-img-fond">
+        <img src="portf-images/fond1.png" alt="Fond1">
+      </div>
+      <button id="button-burger" class="btn-burger fas fa-bars"></button>
+      <nav class="section-menu-home">
+        <ul>
+          <li><a class="link-menu" href="#bloc1">Home{}</a></li>
+          <li><a class="link-menu" href="#bloc2">About Me{}</a></li>
+          <li><a class="link-menu" href="#bloc3">Projects{}</a></li>
+          <li><a class="link-menu" href="#bloc4">Contact{}</a></li>
+        </ul>
+      </nav>
+      <div class="contenu-bloc-out-hm">
+        <span class="vertical-line"></span>
+        <div class="contenu-bloc-in-hm">
+          <h1>Salah-Wassim</h1><br>
+          <h1>ARFA</h1><br>
+          <h3>Junior Web && Web Mobile Developer</h3>
+        </div>
+        <div class="button-contact-hm">
+          <a href="#bloc4">Contact</a>
+        </div>
+      </div>
+      <div class="scrp-image">
+        <img src="portf-images\scorpion.jpg" alt="Scorpion">
+      </div>
+    </section>
+    <section id="bloc2" class="section-aboutMe">
+      <div class="section-img-fond">
+        <img src="portf-images/fond2.png" alt="Fond2">
+      </div>
+      <div class="contenu-bloc-out-btM">
+        <div class="contenu-bloc-in-btM">
+          <h1>About</h1><br>
+          <h1>Me</h1>
+        </div>
+      </div>
+      <div class="border-out-btM">
+        <div class="card-btM">
+          <div class="card-img-btM">
+            <img src="portf-images/portrait.jpg" alt="Portrait">
+          </div>
+          <div class="container-presentation-btM">
+            <p><span class="presentation-m-btM">Hello and welcome to my portfolio ! Click below to find out more!</span>
+              <span class="presentation-d-btM">Hello and welcome to my portfolio! I introduce myself Salah-Wassim ARFA. 
+                Passionate about web development and currently in training Web & Mobile Web Developer, I am looking for 
+                an internship as a Fullstack Junior Web Developer, in order to put my skills into practice. I am creative 
+                and naturally curious as my future projects demonstrate. Rigorous, proactive and good at communicating, 
+                I love both individual and collective challenges.
+              </span> 
+            </p>
+            <div class="download-btM">
+              <button class="download-btn">Download CV</button>
+            </div>
+          </div>
+          <div class="button-contact-btM">
+            <a href="More-AboutMe.html">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bloc3" class="section-projects">
+      <div class="section-img-fond">
+        <img src="portf-images/fond3.png" alt="Fond3">
+      </div>
+      <div class="contenu-bloc-out-prjcts">
+        <div class="contenu-bloc-in-prjcts">
+          <h1>Projects</h1>
+        </div>
+      </div>
+      <div class="contenu-prjcts">
+        <a href="">$1 Projects()</a>
+        <a href="">$2 Projects()</a>
+        <a href="">$3 Projects()</a>
+        <a href="">$4 Projects()</a>
+      </div>
+    </section>
+    <section id="bloc4" class="section-contact">
+      <div class="section-img-fond">
+        <img src="portf-images/fond4.png" alt="Fond4">
+      </div>
+      <div class="contenu-bloc-out-cntct">
+        <div class="contenu-bloc-in-cntct">
+          <h1>Contact</h1>
+        </div>
+      </div>
+      <div class="input-cntct">
+        <form action="formulaire.php" method="POST" name="form" onsubmit="return verifAll(this)">
+          <div class="form-container">
+            <label for="name"><span>Name</span></label><br>
+            <input class="form-name" type="text" name="name" onblur="verifName()">
+          </div>
+          <div class="form-container">
+            <label for="email"><span>Email</span></label><br>
+            <input class="form-email" type="text" name="email" onblur="verifEmail()">
+          </div>
+          <div class="form-container">
+            <label for="Message"><span>Message</span></label><br>
+            <textarea class="form-message" name="message" onblur="verifMessage()"></textarea>
+          </div>
+          <div class="form-container">
+            <label for="rgpd"><span class="rdpd-d">By checking this box, I agree that my data will be used for making 
+              contact. For more information see the <a href="#">CGU</a>.</span>
+              <span class="rdpd-m">Please tick the box <a href="learnMore.html">Learn more</a>.</span></label>
+            <input class="form-rgpd" type="checkbox" name="rgpd">
+          </div>
+          <div class="button-contact-cntct">
+            <input type="submit" class="button-submit">
+          </div>
+        </form>
+      </div>
+      <button class="btn-top fas fa-angle-double-up" scroll-top="section"></button>
+    </section>
+    <footer class="main-footer">
+      <div class="fond-footer">
+        <div class="link-footer-1">
+          <a href="">CGU</a>
+        </div>
+        <div class="link-footer-2">
+          <a &copy; href="">Salah-Wassim_ARFA_2020_Portfolio</a>
+        </div>
+        <div class="link-footer-3">
+          <a href="MentionsLegales.html">Legal Notice</a>
+        </div>
+        <div class="logo">
+          <a href="https://fr.linkedin.com/in/salah-wassim-arfa-20a5a1194"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Salah-Wassim"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="jquery/jquery-scroll-portf.js"></script>
+    <script src="jquery/jquery-script-burger.js"></script>
+    <script src="jquery/jquery-form-portf.js"></script>
+    <script src="jquery/script-download.js"></script>
+  </body>
+</html>

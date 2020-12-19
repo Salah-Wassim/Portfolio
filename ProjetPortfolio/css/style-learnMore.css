@@ -1,0 +1,25 @@
+/*RESET CSS*/
+body{
+    margin:0;
+}
+p,h1,h2,h3,h4,h5,h6{
+    padding:8px;
+}
+a{
+    text-decoration:none;
+}
+.back-link{
+    position:fixed;
+    left:0;
+    top:0;
+    color:#000;
+    padding:7px;
+    background-color: #9e9693;
+    border-radius:6px;
+    margin:5px;
+    font-weight:700;
+  }
+  .content-lrnMr{
+      margin-top:50px;
+      font-family:cursive;
+  }
